@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="img/temperatures.png">
+    <title>Pato Climático</title>
+</head>
+<body>
+    <header aria-label="Cabeçalho da página">
+        <div class="header-content">
+            <h1>Conversor de Temperatura</h1>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="form-container">
+            <div>
+                <label for="txtCelsius">Converta °C para °F: </label>
+                <input type="number" name="" id="txtCelsius">
+
+                <button class="btn" onclick="ConverterCelsius();exibiCelsius()">Calcule</button>
+                <h2 id="result-c"></h2>
+            </div>
+            <div>
+                
+                <label  for="txtFa">Converta °F para °C: </label>
+                <input type="number" name="" id="txtFa">
+
+                <button class="btn" onclick="ConverterFa();exibiFa()">Calcule</button>
+                <h2 id="result-fa"></h2>
+            </div>
+            
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
